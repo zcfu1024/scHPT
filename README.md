@@ -1,7 +1,9 @@
 # scHPT
 Tests for detecting and explaining heterogeneous effects in single-cell perturbation data
+
 # Method Overview
-<img src="method.png" width="500">
+<img src="method.png" width="650">
+
 scHPT consists of three hypothesis test.
 
 Test 1 evaluates whether perturbation effects are homogeneous across all cells. 
