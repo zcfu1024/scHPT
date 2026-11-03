@@ -57,7 +57,7 @@ res=scHPT.permute_test_cov(adata, Y_column, T_column, covs_columns=[''],
 
 ### Examples
 
-Check the basic usage on [Nutlin](res/example1.ipynb) and [6-TG](res/example2.ipynb) data.
+Check the basic usage on [Nutlin](res/Nutlin_res.ipynb) and [6-TG](res/6TG_res.ipynb) data.
 
 The results in the manuscript and some additional analysis are also provided in folder 'res'.
 
