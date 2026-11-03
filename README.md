@@ -36,7 +36,8 @@ res=scHPT.permute_test(adata, Y_column, T_column,
 * pert_name: The name of perturbed cells;
 * ctrl_name: The name of control cells;
 * n_perm: The number of permutations.
-*'res' contains Test1 pvalue; pvalues, SKS, and corresponding taus in aggregation; estimation of tau and sd(tau).
+* 'res' contains Test1 pvalue; pvalues, SKS, and corresponding taus in aggregation; estimation of tau and sd(tau).
+
 **Test2**:
 ``` python
 res_df=scHPT.permute_test_group(adata, Y_column, T_column, group_column,
@@ -44,12 +45,23 @@ res_df=scHPT.permute_test_group(adata, Y_column, T_column, group_column,
 ```
 * group_column: The column name of subgroup (e.g. cell lines) in metadata 'adata.obs';
 * n_cell_min: The threshold of cell numbers in each subgroup.
-*'res_df' contains Test2 pvalues;  estimations of tau and sd(tau) in each subgroup.
+* 'res_df' contains Test2 pvalues;  estimations of tau and sd(tau) in each subgroup.
+  
 **Test3**:
 ``` python
 res=scHPT.permute_test_cov(adata, Y_column, T_column, covs_columns=[''],
                            pert_name, ctrl_name, n_perm=1000)
 ```
 * covs_columns: A list containing the column names of covariates in metadata 'adata.obs';
-*'res' contains Test3 pvalue; pvalues, SKS, and betas in aggregation; estimation of beta and cov(beta).
+* 'res' contains Test3 pvalue; pvalues, SKS, and betas in aggregation; estimation of beta and cov(beta).
+
+### Examples
+
+Check the basic usage on [Nutlin](res/example1.ipynb) and [6-TG](res/example2.ipynb) data.
+
+The results in the manuscript and some additional analysis are also provided in folder 'res'.
+
+### Contact
+
+Please contact [zichu@stanford.edu] with questions.
 
